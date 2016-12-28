@@ -11,6 +11,8 @@ class Tasks extends CI_Model
     public $created_on;
     public $updated_on;
 
+//    //API Auth-Key
+//    public $auth_key='simplerestapi';
 
     public function __construct()
     {
@@ -62,6 +64,18 @@ class Tasks extends CI_Model
     }
 
     //API Functions
+
+    public function check_auth_client(){
+//        $client_service = $this->input->get_request_header('Client-Service', TRUE);
+        $auth_key  = $this->input->get_request_header('Auth-Key', TRUE);
+//        if($client_service == $this->client_service && $auth_key == $this->auth_key){
+        if($auth_key == 'simplerestapi'){
+            return true;
+        } else {
+            return json_output(401,array('status' => 401,'message' => 'Unauthorized.'));
+        }
+    }
+
     public function api_new_task($title, $description)
     {
         $this->title = $title;
@@ -79,4 +93,6 @@ class Tasks extends CI_Model
         $this->db->update('tasks', $this, array('id' => $task_id));
         return true;
     }
+
+
 }

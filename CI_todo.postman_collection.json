@@ -1,0 +1,143 @@
+{
+	"id": "a0ec510f-f622-0fc9-0061-5e56ef0678a0",
+	"name": "CI_todo",
+	"description": "To do list in Code Ignitor",
+	"order": [
+		"abd241b2-8e34-5428-2290-ff4a00977293",
+		"d96ada8f-e4d9-5646-9320-5c302a5a1afb",
+		"cee53f51-4f56-acde-f2ff-66e22554e57f",
+		"650967dd-2030-3e19-1ba1-2241f7c89010"
+	],
+	"folders": [],
+	"timestamp": 1482322225169,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "650967dd-2030-3e19-1ba1-2241f7c89010",
+			"headers": "",
+			"url": "http://localhost/todo/api/task/delete/42",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "a0ec510f-f622-0fc9-0061-5e56ef0678a0",
+			"data": [
+				{
+					"key": "title",
+					"value": "Updated API task",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "Updated API task",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				}
+			],
+			"dataMode": "params",
+			"name": "http://localhost/todo/api/task/deletet/42",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1482327591859,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "abd241b2-8e34-5428-2290-ff4a00977293",
+			"headers": "Auth-Key: simplerestapi\n",
+			"url": "http://localhost/todo/api/tasks",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1482909669073,
+			"name": "http://localhost/todo/api/tasks",
+			"description": "Getting All tasks",
+			"collectionId": "a0ec510f-f622-0fc9-0061-5e56ef0678a0",
+			"responses": []
+		},
+		{
+			"id": "cee53f51-4f56-acde-f2ff-66e22554e57f",
+			"headers": "Auth-Key: simplerestapi\n",
+			"url": "http://localhost/todo/api/task/edit/41",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "title",
+					"value": "Updated API task using header auth",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "Updated API task using header auth",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				}
+			],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1482909675648,
+			"name": "http://localhost/todo/api/task/edit/42",
+			"description": "",
+			"collectionId": "a0ec510f-f622-0fc9-0061-5e56ef0678a0",
+			"responses": []
+		},
+		{
+			"id": "d96ada8f-e4d9-5646-9320-5c302a5a1afb",
+			"headers": "Auth-Key: simplerestapi\n",
+			"url": "http://localhost/todo/api/task/new",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "title",
+					"value": "New API task using header auth",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "New API task using header auth",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1482909683098,
+			"name": "http://localhost/todo/api/task/new",
+			"description": "",
+			"collectionId": "a0ec510f-f622-0fc9-0061-5e56ef0678a0",
+			"responses": []
+		}
+	]
+}
